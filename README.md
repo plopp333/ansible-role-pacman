@@ -1,5 +1,5 @@
-Role Name
-=========
+Ansible Role: pacman
+====================
 
 A brief description of the role goes here.
 
