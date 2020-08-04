@@ -8,7 +8,5 @@ galaxy_info:
   license: license (BSD, MIT)
   min_ansible_version: 2.9
   platforms:
-    - name: Arch
-      versions:
-        - all
+    - name: ArchLinux
   galaxy_tags: []
