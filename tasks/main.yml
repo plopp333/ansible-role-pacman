@@ -2,14 +2,11 @@
 - name: Ensure blacklisted packages are not installed.
   become: true
   pacman:
-    name: "{{ item }}"
+    name: "{{ pacman_uninstalled_packages }}"
     state: absent
-  with_items: "{{ pacman_uninstalled_packages }}"
 
 - name: Install configured pacman packages.
   become: true
   pacman:
-    name: "{{ item }}"
+    name: "{{ pacman_installed_packages }}"
     state: present
-  with_items: "{{ pacman_installed_packages }}"
-
